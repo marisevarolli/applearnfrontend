@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões de ferramentas de programação</title>
+    <style>
+        body{
+            background-color: #aea8a8;
+        }
+        .button {
+            background-color: #4c51af;
+            border: none;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 8px 6px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .button3 {
+            background-color: white;
+            color: black;
+            border: 2px solid #f44336;
+        }
+
+        .button3:hover {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        .button4:hover {
+            background-color: #555555;
+            color: white;
+        }
+        p {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Botões de ferramentas de programação</h2>
+    <button id="botao-html" class="button button1"
+        onclick="document.getElementById('paragrafo1').innerHTML='O HTML é uma linguagem de marcação de hipertexto e está presente em praticamente todos os sites da internet. Ela foi criada na década de 90 e até hoje é amplamente usada por desenvolvedores front-end e back-end. Ao longo de mais de três décadas, recebeu diversas melhorias e passou de uma simples página com texto para grandes projetos com vídeos, áudios e outros componentes multimídia.'">HTML</button>
+    <button id="botao-css" class="button button2"
+        onclick="document.getElementById('paragrafo1').innerHTML='CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.'">CSS</button>
+    <button id="botao-javascript" class="button button3"
+        onclick="document.getElementById('paragrafo1').innerHTML='JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.'">Javascript</button>
+    <button id="botao-dom" class="button button4"
+        onclick="document.getElementById('paragrafo1').innerHTML='A sigla DOM significa Document Object Model, que em português significa Modelo de Documento por Objetos. Trata-se de uma interface de programação que os navegadores utilizam para representar páginas na web. O DOM oferece um modelo de representação e interação do documento HTML ou XML. Esse modelo se estrutura em formato de árvore, com vários galhos que indicam diferentes elementos da página. Quando esse modelo é alterado através da linguagem de script, se altera a página da web — seja sua estrutura, estilo ou elementos.'">DOM</button>
+</body>
+<p id="paragrafo1"></p>
+
+</html>
