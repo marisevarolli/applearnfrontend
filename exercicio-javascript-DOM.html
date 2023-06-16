@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de JavaScript com DOM</title>
+    <script>
+            function mostrarEsconder(estado){
+                if (estado == 'none'){
+                    estado = 'block'}
+                else {
+                    estado = 'none'
+                }
+                return estado
+                }
+    </script>
+</head>
+
+<body>
+
+    <h2>O que o JavaScript pode fazer?</h2>
+
+    <p id="subtitulo">JavaScript pode modificar elementos hmtl. Como pode serem feitas essas modificações?</p>
+
+    <p id="detalhes.js"></p>
+
+    <ul>
+        <ol>
+            <li>Pode realizar alterações no conteúdo do elemento HTML</li>
+            <li>Pode realizar alterações nos atributos do elemento HTML.</li>
+            <li>Pode realizar alterações nos estilos dos elementos HTML.</li>
+            <li>Pode esconder ou mostrar o elemento HTML.</li>
+            <li>Pode criar ou excluir um elemento HTML.</li>
+            <br>
+            <ol />
+            <ul />
+            <button type="button" onclick='document.getElementById("detalhes.js").innerHTML = "JavasScript é uma das linguagens de programação mais populares do mundo. Ela é a linguagem de programação da Web. É fácil de aprender. E pode ser usada para programar interfaces (Front End) e também as regras de um negócio (BackEnd)."'>Inserir detalhes sobre JavaScript</button>
+            <br>
+            <br>
+            <button type="button" onclick='document.getElementById("subtitulo").style.fontSize = "25px" '>Alterar o estilo do texto</button>
+            <br>
+            <br>    
+            <button type="button" onclick='document.getElementById("detalhes.js").style.display = "none"'>Esconder texto</button>    
+            <br>
+            <br>        
+            <button type="button" onclick='document.getElementById("detalhes.js").style.display = "block"'>Mostrar texto</button>    
+            <br>
+            <br>
+            <button type="button" onclick='document.getElementById("detalhes.js").style.display = "mostrarEsconder"'>Mostrar / Esconder</button>
+        </body>
+
+</html>
